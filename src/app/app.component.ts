@@ -20,11 +20,21 @@ export class AppComponent {
   escribirModelo(){
     console.log(this.twoWayData);
   }
-  escribir(evento:Event){
+  escribir(evento){
     console.log(evento.value);
   }
-  colorearFondo(evento:Event){
+  colorearFondo(evento){
     evento.srcElement.style.background = "red";
     evento.srcElement.style.width = "15rem"
+  }
+  ingresar(evento){
+    if(evento.key == "Enter")
+      alert("Enter")
+  }
+  mouseEntrado(evento){
+    evento.srcElement.style.fontSize="20rem"
+  }
+  mouseLeave(evento){
+    evento.srcElement.style.fontSize="1rem";
   }
 }

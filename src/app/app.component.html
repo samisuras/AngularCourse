@@ -12,13 +12,19 @@
 
   <label for="parrafo">Two way data binding</label>
   <!-- ng model change evento de cambio de estado del modelo, validaciones automaticas -->
-  <input type="text" (ngModelChange)="escribirModelo()" [(ngModel)]="twoWayData"  name="" id="parrafo">
+  <input type="text" (keydown)="ingresar($event)" (ngModelChange)="escribirModelo()" [(ngModel)]="twoWayData"  name="" id="parrafo">
   <p>{{ twoWayData }}</p>
   
   <button (dblclick) = "doble()" >Iniciar</button>
-  <button (dblclick) = "llamarAlert()" >doble click</button>
+  <button  (dblclick) = "llamarAlert()" >doble click</button>
 
   <input type="text" name="" (input) = "escribir($event)" id="">
 
   <input type="text" name="" (focus)="colorearFondo($event)" id="">
+
+  <p (mouseenter) = "mouseEntrado($event)" (mouseleave)="mouseLeave($event)" >
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+    Vitae commodi quos soluta fugiat. Facere obcaecati aspernatur minus <br>
+    neque aliquid inventore cum non. Amet ipsam voluptatem corporis cum! Consectetur, recusandae nisi!
+  </p>
 </div>
