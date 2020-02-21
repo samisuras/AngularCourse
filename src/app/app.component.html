@@ -11,7 +11,8 @@
   <input type="text" name="" [value]="inputTexto" id="">
 
   <label for="parrafo">Two way data binding</label>
-  <input type="text" [(ngModel)]="twoWayData" name="" id="parrafo">
+  <!-- ng model change evento de cambio de estado del modelo, validaciones automaticas -->
+  <input type="text" (ngModelChange)="escribirModelo()" [(ngModel)]="twoWayData"  name="" id="parrafo">
   <p>{{ twoWayData }}</p>
   
   <button (dblclick) = "doble()" >Iniciar</button>

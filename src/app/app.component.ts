@@ -16,6 +16,8 @@ export class AppComponent {
 
   llamarAlert() {
     alert("Dobleclick hecho");
+  }
+  escribirModelo(){
     console.log(this.twoWayData);
   }
   
