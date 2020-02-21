@@ -8,6 +8,12 @@
     <div class="spacer"></div>
   <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
   </a>
+  <input type="text" name="" [value]="inputTexto" id="">
+
+  <label for="parrafo">Two way data binding</label>
+  <input type="text" [(ngModel)]="twoWayData" name="" id="parrafo">
+  <p>{{ twoWayData }}</p>
+  
   <button (dblclick) = "doble()" >Iniciar</button>
   <button (dblclick) = "llamarAlert()" >doble click</button>
 </div>

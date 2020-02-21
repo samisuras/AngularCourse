@@ -6,14 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-app';
+  title:String = 'first-app';
+  inputTexto:String = "Samy";
+  twoWayData:String = "";
 
   doble() {
     console.log("doble click");
   }
 
   llamarAlert() {
-    alert("Dobleclick hecho")
+    alert("Dobleclick hecho");
+    console.log(this.twoWayData);
   }
   
 }
