@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-app';
+
+  doble() {
+    console.log("doble click");
+  }
+
+  llamarAlert() {
+    alert("Dobleclick hecho")
+  }
+  
 }
