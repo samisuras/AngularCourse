@@ -20,5 +20,11 @@ export class AppComponent {
   escribirModelo(){
     console.log(this.twoWayData);
   }
-  
+  escribir(evento:Event){
+    console.log(evento.value);
+  }
+  colorearFondo(evento:Event){
+    evento.srcElement.style.background = "red";
+    evento.srcElement.style.width = "15rem"
+  }
 }
